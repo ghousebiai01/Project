@@ -3,29 +3,32 @@
 #include <iostream>
 
 using namespace std;
-class accessspecifier{
-//private:
-  //  string name;
-    //int z=9;
-//protected:
-   // int y=5;
+class accesspecifier{
+public:
+    int x=3,y=4,z=7,w;
+    };
+class settergetter{
+private:
+    string name,name1="Ghouse Bi";
+    int z=9;
+
 public:
 
-//int a=5,b=7,c;
+int a,b,c;
 
-/*int avalue() {
+void setavalue() {
 
- cout <<z;
- c=y;
+
+ c=z;
  cout <<c;
  }
- int getvalue(int d)
- { return y;}*/
+ int getavalue(int c)
+ { return z;}
 
- //cout<<d;}
-string name;
 
-void setvalue()
+//string name;
+
+void setvaluestring1()
 {
 
 
@@ -34,33 +37,31 @@ void setvalue()
 
 }
 
-  string getvalue2()
+string getvaluestring2()
 
      {
 
 return name;
      }
-//}
+
+
+void setvaluestring2()
+{
+string name2;
+
+   name2=name1;
+
+}
+     string getvaluestring3()
+
+     {
+string name2;
+return name1;
+     }
+
 
 };
-/*class intvoid1{
-private:
-    int p=2;
-public:
 
-    void getp()
-    {
-    int q;
-    q=p;
-
-}
-/*int gettingp1()
-{
-int q;
-    return q;
-
-}
-};*/
 
 
 
@@ -68,30 +69,23 @@ int q;
 
 int main()
 {
+    //accessspecifier
+    class accesspecifier as;
+    int x,y,w;
+    cout <<as.x+as.y<<endl;  //7
 
-accessspecifier ae;
-/*cout <<ae.a;
-
-/*cout <<ae.a+ae.b;//12
- int a;
- cout <<a-a;//0*/
- //ae.avalue();//9,5
- /*int d;
- ae.gettingvalue(d);//5
-cout<< "My lucky number is:" <<ae.getvalue(5);*/
-
-
-
- ae.setvalue();
-
- cout <<ae.getvalue2();
-
-//intvoid1 iv;
-
-
-//iv.getp();
-
-//iv.gettingp1();
-    return 0;
+    as.w=12;
+    cout <<as.w+10<<endl;  //22
+     //settergetter cin
+int c;
+settergetter sg;
+sg.setavalue();   //int
+cout <<"The private specifier value is"<<sg.getavalue(c)<<endl;   //9
+sg.setvaluestring1();   //string
+cout <<"hai "<<sg.getvaluestring2()<<endl;
+            //settergetter setvalue
+sg.setvaluestring2();
+cout<<"hi "<<sg.getvaluestring3()<<endl;
+return 0;
 }
 

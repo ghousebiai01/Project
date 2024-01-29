@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # depslib dependency file v1.0
 1706124625 source:c:\users\juber khan\desktop\dhillu bright\project\c++ programs\settergetter\gettersetter\main.cpp
 	<iostream>
 
+=======
+# depslib dependency file v1.0
+1706124625 source:c:\users\juber khan\desktop\dhillu bright\project\c++ programs\settergetter\gettersetter\main.cpp
+	<iostream>
+
+>>>>>>> 8b7017e9520e2ea6cdc607a99d844c3b393b9df7

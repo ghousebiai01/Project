@@ -4,34 +4,34 @@ using namespace std;
 
 int main()
 {
-    int a=10, b=20;
-    cout<<"value of a      : %d \t\n", a);
-    printf("Address of a    : %d \n", &a);
-    printf("-----------\n");
-    printf("value of b      : %d \t\n", b);
-    printf("address of B    : %d \n", &b);
-    printf("-----------\n");
+    int a=10 , b=20;
+    cout <<"value of a      :   \t"<<a<<endl;
+    cout <<"Address of a    :   \t"<< &a << endl;
+    cout <<"-----------\n"  << endl;
+    cout <<"value of b      :   \t" << b << endl;
+    cout <<"address of B    :   \t" << &b << endl;
+    cout <<"-----------\n" << endl;
 
     int *p=&a;
-    printf("value of p                          : %d \t\n", p);
-    printf("address of p                        : %d \t\n", &p);
-    printf("value stored in the address of p    : %d \t\n", *p);
-    printf("-----------\n");
+    cout <<"value of p                          :   \t" << p << endl;
+    cout <<"address of p                        :   \t" << &p << endl;
+    cout <<"value stored in the address of p    :   \t" << *p << endl;
+    cout <<"-----------\n" << endl;
 
     int **q=&p;
-    printf("value of q                                              : %d \t\n", q);
-    printf("address of q                                            : %d \t\n", &q);
-    printf("value stored in the address of q to the address of p    : %d \t\n", **q);
+    cout <<"value of q                                              :   \t" << q << endl;
+    cout <<"address of q                                            :   \t" << &q << endl;
+    cout <<"value stored in the address of q to the address of p    :   \t" << **q << endl;
 
     int ***r=&q;
-    printf("value of r                                                                  : %d \t\n", r);
-    printf("address of r                                                                : %d \t\n", &r);
-    printf("value stored in the address of r to the address of q in the address of p    : %d \t\n", ***r);
+    cout <<"value of r                                                                  :   \t" << r << endl;
+    cout <<"address of r                                                                :   \t" << &r << endl;
+    cout <<"value stored in the address of r to the address of q in the address of p    :   \t" << ***r << endl;
 
     void *s=&a;
-    printf("value of s                                                                  : %d \t\n", s);
-    printf("address of s                                                                : %d \t\n", &s);
-    printf("value stored  in the address of s in the address of r to the address of q in the address of p    : %d \t\n", *(int*)s);
+    cout <<"value of s                                                                  :   \t" << s << endl;
+    cout <<"address of s                                                                :   \t" << &s << endl;
+    cout <<"value stored  in the address of s in the address of r to the address of q in the address of p    :   \t" << *(int*)s << endl;
 
     return 0;
 }

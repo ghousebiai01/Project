@@ -1,0 +1,4 @@
+a="beautiful"
+def mycond()
+print("life is "+)
+mycond()

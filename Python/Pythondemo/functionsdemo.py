@@ -17,8 +17,20 @@
 myaddition()
 r="Ghouse bi"
 print(r[1:4])
-print(r[:5])"""
+print(r[:5])
 
 age = "thirty four"
 txt = "My name is John, I am " + age
-print(txt)
+print(txt)"""
+from turtle import *
+bgcolor("pink")
+color("red")
+begin_fill()
+pensize(4)
+left(50)
+forward(133)
+circle(50,200)
+right(140)
+circle(50,200)
+forward(133)
+end_fill
